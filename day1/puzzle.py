@@ -1,4 +1,4 @@
-f = open("puzzle_input.txt", "r")
+f = open("input.txt", "r")
 pi = list(map(int, f.read().splitlines()))
 
 part1 = sum([current > previous for previous, current in zip(pi, pi[1:])])
